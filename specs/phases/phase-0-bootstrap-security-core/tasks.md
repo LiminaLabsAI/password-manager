@@ -36,5 +36,5 @@ type: Phase Tasks
 ## Group 4 — Verification
 - [x] Smoke test: signup → login → save → reload → decrypt → logout
 - [x] Assert no plaintext master password / vault key over network or in storage
-- [ ] CI green on Phase 0 branch
-- [ ] Commit: `test: Phase 0 smoke test + security invariants`
+- [x] CI green on Phase 0 branch
+- [x] Commit: `test: Phase 0 smoke test + security invariants`
