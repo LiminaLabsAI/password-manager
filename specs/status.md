@@ -49,12 +49,6 @@ Prisma + libsodium-wrappers; single deploy unit. See
 
 | Phase | Branch | Status | Progress |
 |-------|--------|--------|----------|
-| _(none — project not founded yet)_ | | | |
-
-## Active Phase
-
-| Phase | Branch | Status | Progress |
-|-------|--------|--------|----------|
 | _(none — Phase 0 released; Phase 1 not yet started)_ | | | |
 
 ## Upcoming Phases
