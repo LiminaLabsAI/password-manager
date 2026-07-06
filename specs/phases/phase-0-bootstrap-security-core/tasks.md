@@ -8,9 +8,9 @@ type: Phase Tasks
 > produced passing output for that item in this session (Rule 12).
 
 ## Group 0 — Project scaffold
-- [ ] Initialize Next.js (App Router) + TypeScript + Tailwind CSS
-- [ ] Configure ESLint, `tsc --noEmit`, Vitest
-- [ ] Add CI workflow (lint + typecheck + test on push)
+- [x] Initialize Next.js (App Router) + TypeScript + Tailwind CSS
+- [x] Configure ESLint, `tsc --noEmit`, Vitest
+- [x] Add CI workflow (lint + typecheck + test on push)
 - [ ] Commit: `chore: scaffold Next.js + TS + Tailwind + Vitest + CI`
 
 ## Group 1 — Data layer

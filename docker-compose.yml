@@ -1,0 +1,18 @@
+# Local dev Postgres for password-manager.
+# Run with: `npm run db:up` (starts db); `npm run db:down` (stops).
+services:
+  db:
+    image: postgres:16
+    container_name: password-manager-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: pm
+      POSTGRES_PASSWORD: pm
+      POSTGRES_DB: passwordmanager
+    ports:
+      - "5432:5432"
+    volumes:
+      - password-manager-db-data:/var/lib/postgresql/data
+
+volumes:
+  password-manager-db-data:

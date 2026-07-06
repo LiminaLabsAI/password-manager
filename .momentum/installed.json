@@ -1,0 +1,53 @@
+{
+  "version": "0.32.0",
+  "momentumVersion": "0.32.0",
+  "agents": {
+    "opencode": {
+      "version": "0.32.0",
+      "files": [
+        ".agent/engines/subagent-dispatch.md",
+        ".githooks/commit-msg",
+        ".githooks/contract.js",
+        ".githooks/pre-push",
+        ".githooks/run-check.js",
+        ".opencode/agents/momentum-reviewer-architecture.md",
+        ".opencode/agents/momentum-reviewer-qa.md",
+        ".opencode/agents/momentum-reviewer-security.md",
+        ".opencode/agents/swarm-supervisor.md",
+        ".opencode/commands/brainstorm-idea.md",
+        ".opencode/commands/brainstorm-phase.md",
+        ".opencode/commands/complete-phase.md",
+        ".opencode/commands/continue.md",
+        ".opencode/commands/dispatch.md",
+        ".opencode/commands/ecosystem.md",
+        ".opencode/commands/handoff.md",
+        ".opencode/commands/hotfix.md",
+        ".opencode/commands/initiative.md",
+        ".opencode/commands/lanes.md",
+        ".opencode/commands/log.md",
+        ".opencode/commands/migrate.md",
+        ".opencode/commands/review-code.md",
+        ".opencode/commands/review.md",
+        ".opencode/commands/scout.md",
+        ".opencode/commands/session.md",
+        ".opencode/commands/start-phase.md",
+        ".opencode/commands/start-project.md",
+        ".opencode/commands/swarm.md",
+        ".opencode/commands/sync-docs.md",
+        ".opencode/commands/systematic-debug.md",
+        ".opencode/commands/track.md",
+        ".opencode/commands/validate.md",
+        ".opencode/plugins/momentum.js",
+        ".opencode/skills/momentum-lanes/SKILL.md",
+        ".opencode/skills/momentum-orient/SKILL.md",
+        ".opencode/skills/momentum-track/SKILL.md",
+        ".opencode/skills/momentum-validate/SKILL.md",
+        "AGENTS.md",
+        "scripts/brainstorm-gate.sh",
+        "scripts/check-history-reminder.sh",
+        "scripts/session-append.sh",
+        "scripts/sessionstart-handoff.sh"
+      ]
+    }
+  }
+}
