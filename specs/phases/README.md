@@ -6,7 +6,7 @@ type: Guide
 
 | Phase | Name | Status | Directory |
 |-------|------|--------|-----------|
-| 0 | Bootstrap Security Core | In Progress | `specs/phases/phase-0-bootstrap-security-core/` |
+| 0 | Bootstrap Security Core | Complete (v0.1.0) | `specs/phases/phase-0-bootstrap-security-core/` |
 
 ## Phase Structure
 

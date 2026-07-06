@@ -1,6 +1,6 @@
 # Phases
 
-* [phase-0-bootstrap-security-core](/phases/phase-0-bootstrap-security-core/overview.md) - in-progress
+* [phase-0-bootstrap-security-core](/phases/phase-0-bootstrap-security-core/overview.md) - complete
 
 # Guides
 

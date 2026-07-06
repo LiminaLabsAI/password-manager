@@ -5,8 +5,8 @@ type: Status
 # Project Status
 
 > **Last Updated**: 2026-07-06
-> **Current Phase**: Phase 0 — Bootstrap Security Core (In Progress)
-> **Latest Release**: None
+> **Current Phase**: Phase 0 — Bootstrap Security Core (Complete)
+> **Latest Release**: v0.1.0 (2026-07-06)
 > **Health**: On Track
 
 ## Summary
@@ -26,7 +26,7 @@ Prisma + libsodium-wrappers; single deploy unit. See
 
 | Phase | Name | Status | Released |
 |-------|------|--------|---------|
-| _(none yet)_ | | | |
+| 0 | Bootstrap Security Core | Complete | v0.1.0 (2026-07-06) |
 
 ## Ad-hoc / Patch Releases
 
@@ -37,6 +37,9 @@ Prisma + libsodium-wrappers; single deploy unit. See
 | Version | Date | Type | Summary |
 |---------|------|------|---------|
 | _(none yet)_ | | | |
+
+> Phase releases are recorded in the Completed Phases table above. v0.1.0
+> shipped Phase 0; npm publish was deferred by the user.
 
 ## Active Phase
 
@@ -52,14 +55,13 @@ Prisma + libsodium-wrappers; single deploy unit. See
 
 | Phase | Branch | Status | Progress |
 |-------|--------|--------|----------|
-| 0 — Bootstrap Security Core | phase-0-bootstrap-security-core | In Progress | 4 / 4 groups |
+| _(none — Phase 0 released; Phase 1 not yet started)_ | | | |
 
 ## Upcoming Phases
 
 | Phase | Name | Status | Key Deliverables |
-|-------|------|--------|-----------------|
-| 0 | Bootstrap Security Core (v0.1.0) | Not Started | Next.js + TS scaffold; Postgres + Prisma; libsodium KDF + crypto helpers; auth signup/login via master password; empty encrypted vault round-trip; smoke test; CI |
-| 1 | Vault CRUD + Generator (v0.2.0) | Not Started | Encrypted entry CRUD; password generator (length + char sets); vault sync with version counter (last-write-wins) |
+|-------|------|--------|------------------|
+| 1 | Vault CRUD + Generator (v0.2.0) | Not Started | Encrypted entry CRUD (name, username, password, url, notes); password generator (length + char sets); vault sync with version counter (last-write-wins) |
 | 2 | Daily-Use Hardening (v0.3.0) | Not Started | Lock-on-timeout + on-demand lock; client-side search/filter; efficiency pass |
 | 3 | Safety & Recovery (v0.4.0) | Not Started | Export encrypted vault; recovery code generation + lost-password recovery flow; cross-device sync verification |
 
@@ -77,7 +79,7 @@ Prisma + libsodium-wrappers; single deploy unit. See
 
 ## Next Actions
 
-1. Run `/start-phase` to begin Phase 0 — Bootstrap Security Core (creates phase branch `phase-0-bootstrap-security-core`, executes groups 0–4 per `specs/phases/phase-0-bootstrap-security-core/plan.md`)
+1. Run `/start-phase` to begin Phase 1 — Vault CRUD + Generator (target v0.2.0)
 
 ## Key Decisions Made
 
@@ -85,4 +87,5 @@ Prisma + libsodium-wrappers; single deploy unit. See
 
 ## Recent Changes
 
+- **2026-07-06** — Phase 0 (Bootstrap Security Core) complete and released as **v0.1.0**. Branch `phase-0-bootstrap-security-core` merged to `main`; tag `v0.1.0` pushed. Verification: 18/18 tests pass, CI green, `prisma migrate deploy` clean, `next build` clean, two security invariants asserted by smoke test. npm publish deferred.
 - **2026-07-06** — Project founded: vision, roadmap, and Phase 0 written via `/start-project`.

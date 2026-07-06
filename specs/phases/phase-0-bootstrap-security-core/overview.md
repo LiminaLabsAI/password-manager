@@ -1,13 +1,13 @@
 ---
 type: Phase
-status: in-progress
+status: complete
 tags: [nextjs, typescript, tailwind, postgres, prisma, libsodium, argon2id, xchacha20-poly1305, e2ee, kdf, auth]
 ---
 
 # Phase 0 — Bootstrap Security Core
 
-> **Status**: In Progress
-> **Target**: v0.1.0
+> **Status**: Complete — released v0.1.0 (2026-07-06)
+> **Target**: v0.1.0 ✓
 
 ## Goal
 A logged-in user has an empty encrypted vault syncing to the server, proven
