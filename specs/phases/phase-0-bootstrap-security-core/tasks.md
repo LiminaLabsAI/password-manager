@@ -11,11 +11,11 @@ type: Phase Tasks
 - [x] Initialize Next.js (App Router) + TypeScript + Tailwind CSS
 - [x] Configure ESLint, `tsc --noEmit`, Vitest
 - [x] Add CI workflow (lint + typecheck + test on push)
-- [ ] Commit: `chore: scaffold Next.js + TS + Tailwind + Vitest + CI`
+- [x] Commit: `chore: scaffold Next.js + TS + Tailwind + Vitest + CI`
 
 ## Group 1 — Data layer
-- [ ] Add Prisma + Postgres connection (docker compose for local dev)
-- [ ] Author `users` + `vaults` schema and first migration
+- [x] Add Prisma + Postgres connection (docker compose for local dev)
+- [x] Author `users` + `vaults` schema and first migration
 - [ ] Commit: `feat(db): Prisma schema + migrations for users and vaults`
 
 ## Group 2 — Crypto primitives

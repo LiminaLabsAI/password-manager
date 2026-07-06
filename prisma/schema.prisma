@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  // Argon2id-derived auth hash (never the master password or vault key).
+  // 32 bytes encoded as base64.
+  authHash      String
+  // Last persisted vault version (monotonically increasing; last-write-wins guard).
+  vaultVersion  Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  vault         Vault?
+
+  @@index([email])
+}
+
+model Vault {
+  id         String   @id @default(cuid())
+  userId     String   @unique
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  // The opaque encrypted vault blob (ciphertext + nonce, base64).
+  ciphertext Bytes
+  // Version counter — client must echo the version it read; server rejects
+  // stale writes (client_version < server_version).
+  version    Int      @default(1)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([userId])
+}
