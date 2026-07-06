@@ -13,6 +13,9 @@ model User {
   // Argon2id-derived auth hash (never the master password or vault key).
   // 32 bytes encoded as base64.
   authHash      String
+  // Per-user Argon2id salt (16 bytes). Public-ish: sent to the client on
+  // login so it can re-derive the auth hash. Not secret.
+  salt          Bytes
   // Last persisted vault version (monotonically increasing; last-write-wins guard).
   vaultVersion  Int      @default(0)
   createdAt     DateTime @default(now())

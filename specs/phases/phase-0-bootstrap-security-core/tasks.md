@@ -23,14 +23,14 @@ type: Phase Tasks
 - [x] KDF: master password → Argon2id → (vault key, auth hash) via `crypto_kdf`
 - [x] Symmetric encrypt/decrypt helpers (XChaCha20-Poly1305)
 - [x] Unit tests: round-trip, wrong-password, ciphertext≠plaintext, auth-hash ≠ vault-key, KDF wall-time bounded
-- [ ] Commit: `feat(crypto): Argon2id KDF + XChaCha20-Poly1305 helpers with tests`
+- [x] Commit: `feat(crypto): Argon2id KDF + XChaCha20-Poly1305 helpers with tests`
 
 ## Group 3 — Auth + vault round-trip
-- [ ] Signup endpoint (POST email + auth_hash + empty encrypted vault)
-- [ ] Login endpoint (verify auth_hash; return ciphertext + version)
-- [ ] Save-vault endpoint (PUT ciphertext + version; last-write-wins)
-- [ ] Client pages: `/signup`, `/login`, `/vault` (empty-vault state)
-- [ ] Wire end-to-end empty-vault round-trip through the UI
+- [x] Signup endpoint (POST email + auth_hash + empty encrypted vault)
+- [x] Login endpoint (verify auth_hash; return ciphertext + version)
+- [x] Save-vault endpoint (PUT ciphertext + version; last-write-wins)
+- [x] Client pages: `/signup`, `/login`, `/vault` (empty-vault state)
+- [x] Wire end-to-end empty-vault round-trip through the UI
 - [ ] Commit: `feat(auth): signup + login + empty encrypted vault round-trip`
 
 ## Group 4 — Verification
