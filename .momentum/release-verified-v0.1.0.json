@@ -1,0 +1,16 @@
+{
+  "version": "v0.1.0",
+  "phase": "phase-0-bootstrap-security-core",
+  "verifiedAt": "2026-07-06",
+  "evidence": {
+    "testsLocal": "18/18 pass — npm test (sanity + crypto unit + smoke against live Postgres)",
+    "ci": "Run 28812300910 — green (lint + typecheck + test against Postgres 16 service) on branch phase-0-bootstrap-security-core at commit 6eec435",
+    "build": "next build — clean, routes registered dynamic / static prerender ok",
+    "migrations": "prisma migrate deploy — both migrations applied cleanly (local brew postgres + CI service container)",
+    "securityInvariants": {
+      "noPlaintext": "Smoke test asserts: master password and vault key bytes appear in no request body and no persisted DB column",
+      "authHashIsNotVaultKey": "Smoke test asserts: persisted auth hash fed to crypto_kdf with vault context does NOT produce a key that decrypts the vault"
+    }
+  },
+  "scope": "Phase 0 — Bootstrap Security Core. Empty encrypted vault round-trip only; no entry CRUD, generator, lock, search, or recovery (deferred to phases 1–3)."
+}
