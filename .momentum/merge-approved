@@ -1,7 +1,7 @@
 {
-  "branch": "phase-0-bootstrap-security-core",
+  "branch": "main",
   "target": "main",
   "version": "v0.1.0",
   "approvedAt": "2026-07-06",
-  "reason": "Phase 0 complete — all groups verified, CI green. User-approved merge + tag to release v0.1.0 (npm publish deferred)."
+  "reason": "Tracking-docs update accompanying the v0.1.0 release the user already approved. Status/changelog/overview updates that belong with the release commit."
 }
