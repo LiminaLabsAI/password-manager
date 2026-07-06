@@ -1,10 +1,12 @@
 ---
-type: Phase Overview
+type: Phase
+status: in-progress
+tags: [nextjs, typescript, tailwind, postgres, prisma, libsodium, argon2id, xchacha20-poly1305, e2ee, kdf, auth]
 ---
 
 # Phase 0 — Bootstrap Security Core
 
-> **Status**: Not Started
+> **Status**: In Progress
 > **Target**: v0.1.0
 
 ## Goal

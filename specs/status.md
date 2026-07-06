@@ -5,7 +5,7 @@ type: Status
 # Project Status
 
 > **Last Updated**: 2026-07-06
-> **Current Phase**: Phase 0 — Bootstrap Security Core (Not Started)
+> **Current Phase**: Phase 0 — Bootstrap Security Core (In Progress)
 > **Latest Release**: None
 > **Health**: On Track
 
@@ -52,7 +52,7 @@ Prisma + libsodium-wrappers; single deploy unit. See
 
 | Phase | Branch | Status | Progress |
 |-------|--------|--------|----------|
-| 0 — Bootstrap Security Core | _(not yet branched)_ | Not Started | 0 / 4 groups |
+| 0 — Bootstrap Security Core | phase-0-bootstrap-security-core | In Progress | 0 / 4 groups |
 
 ## Upcoming Phases
 
