@@ -142,4 +142,24 @@ simplicity; revisit on a deliberate upgrade. (2) `libsodium-wrappers`
 (standard build) does not export `crypto_pwhash` (Argon2id); the "sumo"
 build is required. No backlog item — recorded for context only.
 
+### [FEATURE] 2026-07-06 — Group 4: verification (smoke test + invariants)
+Topics: testing, smoke, security-invariants, ci
+Affects-phases: phase-0-bootstrap-security-core
+Affects-specs: specs/vision/success-criteria.md
+Detail: Added `tests/smoke/phase-0-roundtrip.test.ts` exercising the full
+flow against a live Postgres via the real Next route handlers: signup →
+login challenge → login (wrong hash rejected) → decrypt → save (PUT) →
+reload (GET) → decrypt → optimistic-concurrency 409 → logout. Two explicit
+security invariants are asserted: (a) neither the master password nor the
+derived vault key appears in any request body sent to the handlers OR in
+any persisted DB column (only salt + authHash + ciphertext); (b) the
+persisted auth hash cannot be turned into the vault key — feeding it to
+`crypto_kdf_derive_from_key` with the vault context does not produce a key
+that decrypts the vault. Installed Postgres 16 via Homebrew locally
+(no docker in this env; the docker-compose dev DB implies Postgres
+availability and brew is the equivalent). Ran `prisma migrate deploy`
+cleanly (both migrations applied), then `npm test`: 18/18 tests pass
+including the smoke test. typecheck, lint, and `next build` all clean.
+CI-green on the branch is verified after push via GitHub Actions.
+
 ---

@@ -52,7 +52,7 @@ Prisma + libsodium-wrappers; single deploy unit. See
 
 | Phase | Branch | Status | Progress |
 |-------|--------|--------|----------|
-| 0 — Bootstrap Security Core | phase-0-bootstrap-security-core | In Progress | 0 / 4 groups |
+| 0 — Bootstrap Security Core | phase-0-bootstrap-security-core | In Progress | 4 / 4 groups |
 
 ## Upcoming Phases
 

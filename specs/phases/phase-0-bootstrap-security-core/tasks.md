@@ -31,10 +31,10 @@ type: Phase Tasks
 - [x] Save-vault endpoint (PUT ciphertext + version; last-write-wins)
 - [x] Client pages: `/signup`, `/login`, `/vault` (empty-vault state)
 - [x] Wire end-to-end empty-vault round-trip through the UI
-- [ ] Commit: `feat(auth): signup + login + empty encrypted vault round-trip`
+- [x] Commit: `feat(auth): signup + login + empty encrypted vault round-trip`
 
 ## Group 4 — Verification
-- [ ] Smoke test: signup → login → save → reload → decrypt → logout
-- [ ] Assert no plaintext master password / vault key over network or in storage
+- [x] Smoke test: signup → login → save → reload → decrypt → logout
+- [x] Assert no plaintext master password / vault key over network or in storage
 - [ ] CI green on Phase 0 branch
 - [ ] Commit: `test: Phase 0 smoke test + security invariants`
