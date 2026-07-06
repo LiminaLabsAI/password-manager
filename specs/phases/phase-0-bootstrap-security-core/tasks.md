@@ -16,13 +16,13 @@ type: Phase Tasks
 ## Group 1 — Data layer
 - [x] Add Prisma + Postgres connection (docker compose for local dev)
 - [x] Author `users` + `vaults` schema and first migration
-- [ ] Commit: `feat(db): Prisma schema + migrations for users and vaults`
+- [x] Commit: `feat(db): Prisma schema + migrations for users and vaults`
 
 ## Group 2 — Crypto primitives
-- [ ] Integrate libsodium-wrappers; ready-gate helper
-- [ ] KDF: master password → Argon2id → (vault key, auth hash) via `crypto_kdf`
-- [ ] Symmetric encrypt/decrypt helpers (XChaCha20-Poly1305)
-- [ ] Unit tests: round-trip, wrong-password, ciphertext≠plaintext, auth-hash ≠ vault-key, KDF wall-time bounded
+- [x] Integrate libsodium-wrappers; ready-gate helper
+- [x] KDF: master password → Argon2id → (vault key, auth hash) via `crypto_kdf`
+- [x] Symmetric encrypt/decrypt helpers (XChaCha20-Poly1305)
+- [x] Unit tests: round-trip, wrong-password, ciphertext≠plaintext, auth-hash ≠ vault-key, KDF wall-time bounded
 - [ ] Commit: `feat(crypto): Argon2id KDF + XChaCha20-Poly1305 helpers with tests`
 
 ## Group 3 — Auth + vault round-trip
